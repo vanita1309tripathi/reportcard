@@ -1,0 +1,47 @@
+﻿<!Doctype html> 
+<html lang="en">
+    <head>
+     <meta charset="utf-8" />    
+        <title>Report Card</title>
+      	<link rel="stylesheet" type="text/css" href="styleforindex.css">  
+    </head>
+    
+    <body>  
+    <div class="center"> 
+ 
+            <fieldset class="field" style="width:500px"   >
+                <legend class="legendscript"><b>INPUT:</b></legend>
+                Name:<input type="text" id="txtName">   
+                Branch:<input type="text" id="txtClass"> <br/><br/>
+                <table border="1">
+                    <tr><td>Webtechnology</td><td><input type="text" id="txtWebtech"></td></tr>
+                    <tr><td>C</td><td><input type="text" id="txtC"></td></tr>
+                    <tr><td>Java</td><td><input type="text" id="txtJava"></td></tr>
+                    <tr><td>Python</td><td><input type="text" id="txtPython"></td></tr>             
+                </table><br/><br/>
+                <input type="button" value="Get Result" onclick="getReport()">
+       </div>         
+            </fieldset>
+            
+            <h2 class="reportcard">Report Card</h2>
+       <div class="center">      
+            <table class="report" border="1">
+                <tr><td>Name</td><td><input type="text" id="txtStudentName" readonly></td></tr>
+                <tr><td>Branch</td><td><input type="text" id="txtStudentClass" readonly></td></tr>
+                <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
+                <tr><td>Grade</td><td><input type="text" id="txtGrade" readonly></td></tr>
+                <tr><td>Remarks</td><td><input type="text" id="txtResult" readonly></td></tr>
+            </table>
+        </div>
+        
+         <br><br><br>
+        <div class="download"> 
+          <button type="submit" class="download">Download(.pdf)
+                </button>
+          </div>
+         <script src="Script1.js"></script>   
+   
+     </body>
+  
+   
+</html>
